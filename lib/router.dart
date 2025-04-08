@@ -9,7 +9,7 @@ import 'package:matule/forgot_screen.dart';
 final GoRouter router = GoRouter(
   initialLocation: '/signin', 
   routes: <GoRoute>[
-    StatefulShellRoute.indexedStack(branches: branches),
+  
   GoRoute(
       path: '/signin',
       builder: (context, state) => SigninScreen(),
