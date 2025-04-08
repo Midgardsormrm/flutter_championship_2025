@@ -59,7 +59,7 @@ class ProductCard extends StatelessWidget {
           Container(
             padding: EdgeInsets.only(left: 0, right: 50, top: 115),
             child: Text(
-              'Nike Air Max',
+              'Nike Air Max\n\n₽752.00',
               style: TextStyle(
                   color: Color.fromRGBO(106, 106, 106, 1),
                   fontSize: 16,

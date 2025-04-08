@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:matule/main.dart';
 import 'package:go_router/go_router.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:matule/state_screen.dart';
 class SigninScreen extends StatelessWidget {
-  const SigninScreen({super.key});
+   const SigninScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -93,7 +95,6 @@ class SigninScreen extends StatelessWidget {
                   keyboardType: TextInputType.text,
                   inputFormatters: <TextInputFormatter>[]
                 ),
-
                 ),
                 SizedBox(height: 10),
                 GestureDetector(
@@ -108,8 +109,6 @@ class SigninScreen extends StatelessWidget {
                     textAlign: TextAlign.right,
                   ),
                 ),
-              
- 
                 Container(
                   decoration: BoxDecoration(
                     color: const Color.fromARGB(255, 228, 237, 241),
@@ -133,13 +132,13 @@ class SigninScreen extends StatelessWidget {
                     iconSize: 36,
                     padding: EdgeInsets.all(8.0),
                     onPressed: () => {
-                      context.go('/signin/popular')
+                      context.go('/signin/register')
                     }
 
                   ),
 
                 ),
-                SizedBox( height: 150,),
+                SizedBox( height: 230,),
               Text(
                 'Вы впервые? Создать пользователя',
 
