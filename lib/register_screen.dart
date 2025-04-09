@@ -148,14 +148,32 @@ class RegisterScreen extends StatelessWidget {
                           Row(
                             children: [
                               Text(
-                                  'Даю согласие на обработку\nперсональных данных')
+                                  'Даю согласие на обработку\nперсональных данных'),
+                                  Column(
+                                    children: [
+                                                          Container(
+                      margin: EdgeInsets.only(left: 18),
+                      child: 
+                      IconButton(onPressed: () =>{context.go('/signin/register/forgot')}, icon: Text(
+                        textAlign: TextAlign.right,
+                        'Забыл пароль',
+                        style: TextStyle(
+                          fontWeight: FontWeight.w400,
+                          fontSize: 14,
+                          color: Colors.black,
+                        ),
+                      )),
+                    ),
+                                    ],
+                                  )
                             ],
+                            
                           )
                         ],
                       ),
                     ),
                     SizedBox(
-                      height: 10,
+                      height: 8,
                     ),
                     Container(
                       decoration: BoxDecoration(
@@ -180,15 +198,17 @@ class RegisterScreen extends StatelessWidget {
                           onPressed: () => {context.go('/signin')}),
                     ),
                     SizedBox(
-                      height: 150,
+                      height: 100,
                     ),
-                    Text(
+                    Container(
+                      child: IconButton(onPressed: () => {context.go('/signin')}, icon:                     Text(
                       'Есть аккаунт? Войти',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontSize: 14,
                       ),
-                    ),
+                    ),),
+                    )
                   ],
                 )
               ],

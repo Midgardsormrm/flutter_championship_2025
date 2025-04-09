@@ -145,7 +145,7 @@ class SigninScreen extends StatelessWidget {
                     ),
                     GestureDetector(
                       child: Text('Создать пользователя'),
-                      onTap: () => context.push('/reg'),
+                      onTap: () => context.push('/signin/register'),
                     ),
               
               ],
