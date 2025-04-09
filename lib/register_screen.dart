@@ -177,7 +177,7 @@ class RegisterScreen extends StatelessWidget {
                           splashColor: Colors.white,
                           iconSize: 36,
                           padding: EdgeInsets.all(8.0),
-                          onPressed: () => {context.go('/signin/register/forgot')}),
+                          onPressed: () => {context.go('/signin')}),
                     ),
                     SizedBox(
                       height: 150,

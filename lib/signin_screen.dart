@@ -4,6 +4,7 @@ import 'package:matule/main.dart';
 import 'package:go_router/go_router.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:matule/state_screen.dart';
+
 class SigninScreen extends StatelessWidget {
    const SigninScreen({super.key});
 
@@ -97,18 +98,11 @@ class SigninScreen extends StatelessWidget {
                 ),
                 ),
                 SizedBox(height: 10),
-                GestureDetector(
-                  onTap: () {
-                    print ('object');
-                  },
-                  child: Text(
-                    'Восстановить',
-                    style: TextStyle(
-                    
+                    GestureDetector(
+                      child: Text('Восстановить',
+                      textAlign:  TextAlign.right,),
+                      onTap: () => context.push('/forgot'),
                     ),
-                    textAlign: TextAlign.right,
-                  ),
-                ),
                 Container(
                   decoration: BoxDecoration(
                     color: const Color.fromARGB(255, 228, 237, 241),
@@ -132,27 +126,33 @@ class SigninScreen extends StatelessWidget {
                     iconSize: 36,
                     padding: EdgeInsets.all(8.0),
                     onPressed: () => {
-                      context.go('/signin/register')
+                      context.go('/popular')
                     }
 
                   ),
 
                 ),
-                SizedBox( height: 230,),
-              Text(
-                'Вы впервые? Создать пользователя',
-
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 14,
-                ),
-              ),
+                SizedBox( height: 200,),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      'Вы впервые?',
+                      style: TextStyle(color: Colors.black12),
+                    ),
+                    GestureDetector(
+                      child: Text('Создать пользователя'),
+                      onTap: () => context.push('/reg'),
+                    ),
               
               ],
             )
           ],
         )
-        )
-    );
+          ])
+    ]),));
   }
 }

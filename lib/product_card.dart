@@ -75,10 +75,17 @@ class ProductCard extends StatelessWidget {
                   color: Colors.teal,
                 ),
                 child: IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    showDialog(context: context, 
+                    builder:(context) => AlertDialog(
+                      title: Text('Чтобы добавить в корзину, сначала нужно войти в аккаунт'),
+                    ),
+                    );
+                  },
                   icon: Icon(CupertinoIcons.plus),
                 ),
-              ))
+              )
+              )
         ]));
   }
 }
