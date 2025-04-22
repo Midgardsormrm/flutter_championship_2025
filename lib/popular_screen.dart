@@ -9,43 +9,32 @@ class PopularScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var widgets = <Widget>[];
-    for (var i = 0; i <= 20; i++)
-      widgets.add(ProductCard());
+    for (var i = 0; i <= 20; i++) widgets.add(ProductCard());
     return Scaffold(
-      appBar: AppBar(
-        title: Column(
-          children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text('Популярное'),
-                Spacer(),
-                Icon(CupertinoIcons.heart),
-              ],
-            )
-          ],
-        ),
-      ),
-      body: Scaffold(
-        backgroundColor: Colors.white,
-        body: Padding(padding: const EdgeInsets.only(top: 20, right: 20, left: 20),
-        child: SingleChildScrollView(
-          child: Column(
+        appBar: AppBar(
+          title: Column(
             children: [
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [Column(
-                  children: widgets,
-                ),
-                Column(
-                  children: widgets,
-                )
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Center(
+                    child: Text('Популярное'),
+                  )
                 ],
-              ),
+              )
             ],
           ),
-        ),),
         ),
-    );
-}
+        body: Padding(
+          padding: const EdgeInsets.only(),
+          child: GridView.count(
+            crossAxisCount: 2,
+            children: List.generate(100, (index) {
+              return Center(
+                child: ProductCard(),
+              );
+            }),
+          ),
+        ));
+  }
 }

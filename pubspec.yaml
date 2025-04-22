@@ -35,6 +35,11 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
   go_router: ^14.8.1
+  input_code_field: ^2.0.2
+  flutter_zoom_drawer: ^3.2.0
+  meta: ^1.0.2
+  path: any
+  get: ^4.7.2
 
 dev_dependencies:
   flutter_test:
@@ -91,3 +96,5 @@ flutter:
   # see https://flutter.dev/to/font-from-package
   assets:
     - lib/photo/nike_zoom.png
+    - lib/photo/Ellipse_22.png
+    - lib/photo/Frame.png

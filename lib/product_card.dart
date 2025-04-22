@@ -44,7 +44,9 @@ class ProductCard extends StatelessWidget {
                         height: 70,
                       ),
                     )
-                  ])),
+                  ]
+                  )
+                  ),
           Container(
             padding: const EdgeInsets.only(left: 0, right: 40, top: 100),
             child: Text(
@@ -76,16 +78,17 @@ class ProductCard extends StatelessWidget {
                 ),
                 child: IconButton(
                   onPressed: () {
-                    showDialog(context: context, 
-                    builder:(context) => AlertDialog(
-                      title: Text('Чтобы добавить в корзину, сначала нужно войти в аккаунт'),
-                    ),
+                    showDialog(
+                      context: context,
+                      builder: (context) => AlertDialog(
+                        title: Text(
+                            'Чтобы добавить в корзину, сначала нужно войти в аккаунт'),
+                      ),
                     );
                   },
                   icon: Icon(CupertinoIcons.plus),
                 ),
-              )
-              )
+              ))
         ]));
   }
 }

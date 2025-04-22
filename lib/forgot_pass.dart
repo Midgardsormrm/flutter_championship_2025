@@ -54,8 +54,31 @@ class ForgotPass extends StatelessWidget {
                     context: context,
                     builder:
                         (context) => AlertDialog(
-                          title: Text('Проверьте почту'),
-                          content: Text('Ваш код подтверждения выслан на вашу почту, проверьте пожалуйста.'),
+                          title: Icon(CupertinoIcons.mail_solid),
+                          content: GestureDetector(
+                            onTap: () => context.push('/signin/register/forgot/verif'),
+                            child: Container(
+                              height: 68,
+                              width: 335,
+                              child: Column(
+                                children: [
+                                  Text('Проверьте ваш Email',
+                                  style: TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w700
+                                  ),
+                                  textAlign: TextAlign.center,
+                                  ),
+                                  Text('Мы отправили код ввостановления пароля на вашу электронную почту',
+                                  style: TextStyle(
+                                    color: Color.fromRGBO(112, 123, 123, 1)
+                                  ),
+                                  textAlign: TextAlign.center,
+                                  )
+                                ],
+                              ),
+                            ),
+                          ),
                         ),
                   );
                   // showDialog<String>(

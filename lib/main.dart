@@ -1,16 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:matule/router.dart';
 import 'package:matule/signin_screen.dart';
 import 'package:matule/popular_screen.dart';
 import 'package:matule/test_screen.dart';
 import 'package:go_router/go_router.dart';
+import 'package:matule/zoom_drawer/async_drawe_controller.dart';
 
 void main() {
-  runApp(const SigninScreen());
+  Get.put<AsyncDraweController>(AsyncDraweController());
+  runApp(const App());
 }
 
-class SigninScreen extends StatelessWidget{
-  const SigninScreen({super.key});
+class App extends StatelessWidget{
+  const App({super.key});
 
   @override
   Widget build(BuildContext context) {

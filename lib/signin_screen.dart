@@ -101,7 +101,7 @@ class SigninScreen extends StatelessWidget {
                     GestureDetector(
                       child: Text('Восстановить',
                       textAlign:  TextAlign.right,),
-                      onTap: () => context.push('/forgot'),
+                      onTap: () => context.push('/signin/register/forgot'),
                     ),
                 Container(
                   decoration: BoxDecoration(
