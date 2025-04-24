@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:matule/product_card.dart';
+import 'package:matule/layers/presentations/screens/product_card.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:go_router/go_router.dart';
 

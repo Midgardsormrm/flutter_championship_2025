@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:matule/main.dart';
+import 'package:matule/layers/main.dart';
 import 'package:go_router/go_router.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:matule/state_screen.dart';
+import 'package:matule/trash/state_screen.dart';
 
 class RegisterScreen extends StatelessWidget {
   const RegisterScreen({super.key});

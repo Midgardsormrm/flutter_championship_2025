@@ -1,12 +1,12 @@
 import 'package:go_router/go_router.dart';
-import 'package:matule/popular_screen.dart';
-import 'package:matule/profile_screen.dart';
-import 'package:matule/register_screen.dart';
-import 'package:matule/rootscreen.dart';
-import 'package:matule/signin_screen.dart';
-import 'package:matule/test_screen.dart';
-import 'package:matule/forgot_pass.dart';
-import 'package:matule/verif_screen.dart';
+import 'package:matule/layers/presentations/screens/popular_screen.dart';
+import 'package:matule/layers/presentations/screens/profile_screen.dart';
+import 'package:matule/layers/presentations/screens/register_screen.dart';
+import 'package:matule/layers/presentations/screens/rootscreen.dart';
+import 'package:matule/layers/presentations/screens/signin_screen.dart';
+import 'package:matule/trash/test_screen.dart';
+import 'package:matule/layers/presentations/screens/forgot_pass.dart';
+import 'package:matule/layers/presentations/screens/verif_screen.dart';
 // final router = GoRouter(
 //   initialLocation: '/',
 //   routes: <RouteBase>[

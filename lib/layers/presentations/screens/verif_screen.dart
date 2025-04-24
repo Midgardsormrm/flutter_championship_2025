@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:matule/test_screen.dart';
+import 'package:matule/trash/test_screen.dart';
 import 'package:input_code_field/input_code_field.dart';
 
 class VerifScreen extends StatelessWidget {
