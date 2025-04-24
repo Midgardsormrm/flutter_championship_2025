@@ -41,6 +41,7 @@ dependencies:
   path: any
   get: ^4.7.2
   mobx: ^2.5.0
+  flutter_mobx: ^2.3.0
 
 dev_dependencies:
   flutter_test:
@@ -53,7 +54,8 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^5.0.0
-
+  mobx_codegen: ^2.7.0
+  build_runner: ^2.4.13
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
@@ -99,3 +101,4 @@ flutter:
     - lib/photo/nike_zoom.png
     - lib/photo/Ellipse_22.png
     - lib/photo/Frame.png
+    - lib/photo/Salebanner.png

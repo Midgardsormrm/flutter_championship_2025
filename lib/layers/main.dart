@@ -7,8 +7,7 @@ import 'package:matule/trash/test_screen.dart';
 import 'package:go_router/go_router.dart';
 import 'package:matule/core/zoom_drawer/async_drawe_controller.dart';
 import 'package:mobx/mobx.dart';
-
-
+import 'package:flutter_mobx/flutter_mobx.dart';
 
 void main() {
   Get.put<AsyncDraweController>(AsyncDraweController());

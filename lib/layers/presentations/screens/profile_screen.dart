@@ -1,4 +1,4 @@
-import 'dart:ffi';
+
 
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
@@ -7,12 +7,15 @@ import 'package:flutter/services.dart';
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
 
+  
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         body: Container(
             padding: EdgeInsets.only(left: 20, right: 20, top: 44, bottom: 47),
             child: Column(children: [
+              
               Text(
                 'Профиль',
                 style: TextStyle(
@@ -82,6 +85,7 @@ class ProfileScreen extends StatelessWidget {
                         children: [
                           TextField(
                               obscureText: true,
+                              
                               decoration: InputDecoration(
                                   labelStyle: TextStyle(),
                                   labelText: "Emmanuel",
@@ -125,7 +129,7 @@ class ProfileScreen extends StatelessWidget {
                       child: Column(
                         children: [
                           TextField(
-                              obscureText: true,
+                              obscureText: false,
                               decoration: InputDecoration(
                                   labelStyle: TextStyle(),
                                   labelText: "Oyiboke",

@@ -39,7 +39,7 @@ class VerifScreen extends StatelessWidget {
                         'OTP код',
                         style: TextStyle(
                           fontWeight: FontWeight.w600,
-                          fontSize: 21,
+                          fontSize: 20,
                         ),
                         textAlign: TextAlign.end,
                       )),

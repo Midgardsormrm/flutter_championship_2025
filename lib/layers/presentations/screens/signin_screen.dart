@@ -132,7 +132,7 @@ class SigninScreen extends StatelessWidget {
                   ),
 
                 ),
-                SizedBox( height: 200,),
+                SizedBox( height: 182,),
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [

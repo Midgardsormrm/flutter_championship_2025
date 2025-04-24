@@ -1,4 +1,5 @@
 import 'package:go_router/go_router.dart';
+import 'package:matule/layers/presentations/screens/details_screen.dart';
 import 'package:matule/layers/presentations/screens/popular_screen.dart';
 import 'package:matule/layers/presentations/screens/profile_screen.dart';
 import 'package:matule/layers/presentations/screens/register_screen.dart';
@@ -7,6 +8,7 @@ import 'package:matule/layers/presentations/screens/signin_screen.dart';
 import 'package:matule/trash/test_screen.dart';
 import 'package:matule/layers/presentations/screens/forgot_pass.dart';
 import 'package:matule/layers/presentations/screens/verif_screen.dart';
+import 'package:matule/layers/presentations/screens/notifications_screen.dart';
 // final router = GoRouter(
 //   initialLocation: '/',
 //   routes: <RouteBase>[
@@ -44,7 +46,7 @@ final router = GoRouter(
           StatefulShellBranch(routes: [
             GoRoute(
               path: '/test',
-              builder: (context, state) => ForgotPass(),
+              builder: (context, state) => NotificationsScreen(),
             ),
           ]),
           StatefulShellBranch(routes: [

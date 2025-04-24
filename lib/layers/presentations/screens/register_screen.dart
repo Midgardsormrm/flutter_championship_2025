@@ -142,7 +142,7 @@ class RegisterScreen extends StatelessWidget {
                             size: 12,
                           ),
                           SizedBox(
-                            width: 20,
+                            width: 15,
                           ),
                           SizedBox(height: 70,),
                           Row(
@@ -152,7 +152,7 @@ class RegisterScreen extends StatelessWidget {
                                   Column(
                                     children: [
                                                           Container(
-                      margin: EdgeInsets.only(left: 18),
+                      margin: EdgeInsets.only(left: 0),
                       child: 
                       IconButton(onPressed: () =>{context.go('/signin/register/forgot')}, icon: Text(
                         textAlign: TextAlign.right,
