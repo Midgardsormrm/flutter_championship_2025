@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:matule/layers/presentations/shared/ui/product_card.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:go_router/go_router.dart';
 
 class PopularScreen extends StatelessWidget {
   const PopularScreen({super.key});

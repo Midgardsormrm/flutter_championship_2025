@@ -2,8 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-class DetailsScreen extends StatelessWidget {
-  const DetailsScreen({super.key});
+class DetailsScreen2 extends StatelessWidget {
+  const DetailsScreen2({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -90,8 +90,8 @@ class DetailsScreen extends StatelessWidget {
                 Align(
                   alignment: Alignment.center,
                   child: Image.asset(
-                    'assets/photo/nikezoombig.png',
-                    width: 241,
+                    'assets/photo/nikezoombig2.png',
+                    width: 240,
                     height: 125,
                   ),
                 )
@@ -103,7 +103,7 @@ class DetailsScreen extends StatelessWidget {
               children: <Widget>[
                 Align(
                   child: Image.asset(
-                    'assets/photo/slider.png',
+                    'assets/photo/slider2.png',
                     width: 364,
                     height: 77,
                   ),
@@ -114,9 +114,6 @@ class DetailsScreen extends StatelessWidget {
                 child: Column(
               mainAxisSize: MainAxisSize.max,
               children: <Widget>[
-                IconButton(
-                    onPressed: () => {context.go('/details/details2')},
-                    icon: Icon(CupertinoIcons.arrow_down_left)),
                 Align(
                   child: Image.asset(
                     'assets/photo/airmaxshoes.png',

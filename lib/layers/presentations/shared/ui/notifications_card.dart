@@ -6,12 +6,11 @@ class NotificationsCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      
       child: Container(
         height: 140,
         child: Column(
           children: [
-            Image.asset('lib/photo/Salebanner.png'),
+            Image.asset('assets/photo/Salebanner.png'),
             SizedBox(
               height: 12,
             )

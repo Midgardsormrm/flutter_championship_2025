@@ -23,7 +23,7 @@ class MenuDrawer extends StatelessWidget {
                 Align(
                   alignment: Alignment.bottomCenter,
                   child: Image.asset(
-                    'lib/photo/Ellipse_22.png',
+                    'assets/photo/Ellipse_22.png',
                     width: 96,
                     height: 96,
                   ),
@@ -51,13 +51,13 @@ class MenuDrawer extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               IconButton(
-                  onPressed: () => {context.go('/profile')},
+                  onPressed: () => {context.go('/profle')},
                   icon: Icon(
                     CupertinoIcons.person,
                     color: Colors.white,
                   )),
               IconButton(
-                  onPressed: () => {context.go('/profile')},
+                  onPressed: () => {context.go('/profle')},
                   icon: Text(
                     'Профиль',
                     style: TextStyle(fontSize: 20, color: Colors.white),
@@ -178,7 +178,9 @@ class MenuDrawer extends StatelessWidget {
               width: 0,
             ))),
           ),
-          SizedBox(height: 14,),
+          SizedBox(
+            height: 14,
+          ),
           Row(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [

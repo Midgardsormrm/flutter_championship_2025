@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:matule/trash/test_screen.dart';
 
 class ForgotPass extends StatelessWidget {
   const ForgotPass({super.key});
@@ -9,12 +8,10 @@ class ForgotPass extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
       appBar: AppBar(),
       body: Padding(
         padding: EdgeInsets.only(top: 130, left: 40, right: 20),
         child: Container(
-          
           width: 335,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -52,34 +49,33 @@ class ForgotPass extends StatelessWidget {
                 onPressed: () {
                   showDialog(
                     context: context,
-                    builder:
-                        (context) => AlertDialog(
-                          title: Icon(CupertinoIcons.mail_solid),
-                          content: GestureDetector(
-                            onTap: () => context.push('/signin/register/forgot/verif'),
-                            child: Container(
-                              height: 68,
-                              width: 335,
-                              child: Column(
-                                children: [
-                                  Text('Проверьте ваш Email',
-                                  style: TextStyle(
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.w700
-                                  ),
-                                  textAlign: TextAlign.center,
-                                  ),
-                                  Text('Мы отправили код ввостановления пароля на вашу электронную почту',
-                                  style: TextStyle(
-                                    color: Color.fromRGBO(112, 123, 123, 1)
-                                  ),
-                                  textAlign: TextAlign.center,
-                                  )
-                                ],
+                    builder: (context) => AlertDialog(
+                      title: Icon(CupertinoIcons.mail_solid),
+                      content: GestureDetector(
+                        onTap: () =>
+                            context.push('/signin/register/forgot/verif'),
+                        child: Container(
+                          height: 68,
+                          width: 335,
+                          child: Column(
+                            children: [
+                              Text(
+                                'Проверьте ваш Email',
+                                style: TextStyle(
+                                    fontSize: 16, fontWeight: FontWeight.w700),
+                                textAlign: TextAlign.center,
                               ),
-                            ),
+                              Text(
+                                'Мы отправили код ввостановления пароля на вашу электронную почту',
+                                style: TextStyle(
+                                    color: Color.fromRGBO(112, 123, 123, 1)),
+                                textAlign: TextAlign.center,
+                              )
+                            ],
                           ),
                         ),
+                      ),
+                    ),
                   );
                   // showDialog<String>(
                   //   context: context,

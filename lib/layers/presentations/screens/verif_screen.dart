@@ -1,7 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
-import 'package:matule/trash/test_screen.dart';
 import 'package:input_code_field/input_code_field.dart';
 
 class VerifScreen extends StatelessWidget {
@@ -45,23 +43,20 @@ class VerifScreen extends StatelessWidget {
                       )),
                 ],
               ),
-              Container(height: 99,
-              width: 336,
-              child: InputCodeField(control: codeControl,
-              decoration: InputCodeDecoration(
-                textStyle: Theme.of(context).textTheme.headlineSmall,
-                box: BoxDecoration(
-                  borderRadius: BorderRadius.circular(12),
-                  color: CupertinoColors.lightBackgroundGray
-                )
-              ),),),
+              Container(
+                height: 99,
+                width: 336,
+                child: InputCodeField(
+                  control: codeControl,
+                  decoration: InputCodeDecoration(
+                      textStyle: Theme.of(context).textTheme.headlineSmall,
+                      box: BoxDecoration(
+                          borderRadius: BorderRadius.circular(12),
+                          color: CupertinoColors.lightBackgroundGray)),
+                ),
+              ),
               Row(
-                children: [Text('Отправить заново'),
-                Spacer(),
-                Text('00:30')],
-                
-
-
+                children: [Text('Отправить заново'), Spacer(), Text('00:30')],
               )
             ],
           ),

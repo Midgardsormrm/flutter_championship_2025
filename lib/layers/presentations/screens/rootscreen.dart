@@ -2,7 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
 import 'package:get/get_state_manager/src/simple/get_state.dart';
-import 'package:get/get_state_manager/src/simple/get_view.dart';
 import 'package:go_router/go_router.dart';
 import 'package:matule/core/zoom_drawer/async_drawe_controller.dart';
 import 'package:matule/core/zoom_drawer/menu_drawer.dart';
@@ -16,7 +15,7 @@ class Rootscreen extends StatefulWidget {
   State<Rootscreen> createState() => _RootscreenState();
 }
 
-class _RootscreenState extends State<Rootscreen>  {
+class _RootscreenState extends State<Rootscreen> {
   @override
   Widget build(BuildContext context) {
     return GetBuilder<AsyncDraweController>(

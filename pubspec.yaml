@@ -98,7 +98,13 @@ flutter:
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
   assets:
-    - lib/photo/nike_zoom.png
-    - lib/photo/Ellipse_22.png
-    - lib/photo/Frame.png
-    - lib/photo/Salebanner.png
+    - assets/photo/nike_zoom.png
+    - assets/photo/Ellipse_22.png
+    - assets/photo/Frame.png
+    - assets/photo/Salebanner.png 
+    - assets/photo/nikezoombig.png
+    - assets/photo/slider.png
+    - assets/photo/airmaxshoes.png
+    - assets/photo/idk.png
+    - assets/photo/nikezoombig2.png
+    - assets/photo/slider2.png

@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:matule/layers/main.dart';
 import 'package:go_router/go_router.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:matule/trash/state_screen.dart';
 
 class RegisterScreen extends StatelessWidget {
   const RegisterScreen({super.key});
@@ -32,11 +30,10 @@ class RegisterScreen extends StatelessWidget {
                       children: [
                         IconButton(
                           onPressed: () => {context.go('/signin')},
-                          icon: Icon(CupertinoIcons.arrow_left_circle),
+                          icon: Icon(CupertinoIcons.arrow_left),
                         ),
                       ],
-                    )
-                    ),
+                    )),
                     SizedBox(height: 18.0),
                     Text(
                       'Регистрация',
@@ -144,30 +141,35 @@ class RegisterScreen extends StatelessWidget {
                           SizedBox(
                             width: 15,
                           ),
-                          SizedBox(height: 70,),
+                          SizedBox(
+                            height: 70,
+                          ),
                           Row(
                             children: [
                               Text(
                                   'Даю согласие на обработку\nперсональных данных'),
-                                  Column(
-                                    children: [
-                                                          Container(
-                      margin: EdgeInsets.only(left: 0),
-                      child: 
-                      IconButton(onPressed: () =>{context.go('/signin/register/forgot')}, icon: Text(
-                        textAlign: TextAlign.right,
-                        'Забыл пароль',
-                        style: TextStyle(
-                          fontWeight: FontWeight.w400,
-                          fontSize: 14,
-                          color: Colors.black,
-                        ),
-                      )),
-                    ),
-                                    ],
-                                  )
+                              Column(
+                                children: [
+                                  Container(
+                                    margin: EdgeInsets.only(left: 0),
+                                    child: IconButton(
+                                        onPressed: () => {
+                                              context
+                                                  .go('/signin/register/forgot')
+                                            },
+                                        icon: Text(
+                                          textAlign: TextAlign.right,
+                                          'Забыл пароль',
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.w400,
+                                            fontSize: 14,
+                                            color: Colors.black,
+                                          ),
+                                        )),
+                                  ),
+                                ],
+                              )
                             ],
-                            
                           )
                         ],
                       ),
@@ -201,13 +203,16 @@ class RegisterScreen extends StatelessWidget {
                       height: 100,
                     ),
                     Container(
-                      child: IconButton(onPressed: () => {context.go('/signin')}, icon:                     Text(
-                      'Есть аккаунт? Войти',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: 14,
+                      child: IconButton(
+                        onPressed: () => {context.go('/signin')},
+                        icon: Text(
+                          'Есть аккаунт? Войти',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontSize: 14,
+                          ),
+                        ),
                       ),
-                    ),),
                     )
                   ],
                 )

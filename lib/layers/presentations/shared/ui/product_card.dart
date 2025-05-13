@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class ProductCard extends StatelessWidget {
   const ProductCard({super.key});
@@ -39,14 +40,12 @@ class ProductCard extends StatelessWidget {
                     Align(
                       alignment: Alignment.bottomCenter,
                       child: Image.asset(
-                        'lib/photo/nike_zoom.png',
+                        'assets/photo/nike_zoom.png',
                         width: 142,
                         height: 70,
                       ),
                     )
-                  ]
-                  )
-                  ),
+                  ])),
           Container(
             padding: const EdgeInsets.only(left: 0, right: 40, top: 100),
             child: Text(
@@ -77,15 +76,7 @@ class ProductCard extends StatelessWidget {
                   color: Colors.teal,
                 ),
                 child: IconButton(
-                  onPressed: () {
-                    showDialog(
-                      context: context,
-                      builder: (context) => AlertDialog(
-                        title: Text(
-                            'Чтобы добавить в корзину, сначала нужно войти в аккаунт'),
-                      ),
-                    );
-                  },
+                  onPressed: () => {context.go('/details')},
                   icon: Icon(CupertinoIcons.plus),
                 ),
               ))
