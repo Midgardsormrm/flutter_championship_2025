@@ -2,6 +2,8 @@ import 'package:go_router/go_router.dart';
 import 'package:matule/core/zoom_drawer/menu_drawer.dart';
 import 'package:matule/layers/presentations/screens/details_screen.dart';
 import 'package:matule/layers/presentations/screens/details_screen2.dart';
+import 'package:matule/layers/presentations/screens/edit_profile.dart';
+import 'package:matule/layers/presentations/screens/home_screen.dart';
 import 'package:matule/layers/presentations/screens/popular_screen.dart';
 import 'package:matule/layers/presentations/screens/profile_screen.dart';
 import 'package:matule/layers/presentations/screens/register_screen.dart';
@@ -10,7 +12,6 @@ import 'package:matule/layers/presentations/screens/signin_screen.dart';
 import 'package:matule/layers/presentations/screens/forgot_pass.dart';
 import 'package:matule/layers/presentations/screens/verif_screen.dart';
 import 'package:matule/layers/presentations/screens/notifications_screen.dart';
-import 'package:matule/layers/presentations/screens/profile_screen_2.dart';
 // final router = GoRouter(
 //   initialLocation: '/',
 //   routes: <RouteBase>[
@@ -36,8 +37,7 @@ final router = GoRouter(
             ),
         branches: [
           StatefulShellBranch(routes: [
-            GoRoute(
-                path: '/signin', builder: (context, state) => SigninScreen()),
+            GoRoute(path: '/home', builder: (context, state) => HomeScreen()),
           ]),
           StatefulShellBranch(routes: [
             GoRoute(
@@ -81,7 +81,7 @@ final router = GoRouter(
         ]),
     GoRoute(
         path: '/profle',
-        builder: (context, state) => ProfileScreen2(),
+        builder: (context, state) => EditProfile(),
         routes: [
           GoRoute(
             path: 'menu',
