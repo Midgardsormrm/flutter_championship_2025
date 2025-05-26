@@ -5,7 +5,7 @@ import 'package:matule/layers/presentations/screens/details_screen2.dart';
 import 'package:matule/layers/presentations/screens/popular_screen.dart';
 import 'package:matule/layers/presentations/screens/profile_screen.dart';
 import 'package:matule/layers/presentations/screens/register_screen.dart';
-import 'package:matule/layers/presentations/screens/rootscreen.dart';
+import 'package:matule/layers/presentations/screens/root_screen.dart';
 import 'package:matule/layers/presentations/screens/signin_screen.dart';
 import 'package:matule/layers/presentations/screens/forgot_pass.dart';
 import 'package:matule/layers/presentations/screens/verif_screen.dart';
@@ -31,7 +31,7 @@ final router = GoRouter(
   initialLocation: '/signin',
   routes: [
     StatefulShellRoute.indexedStack(
-        builder: (context, state, navigationShell) => Rootscreen(
+        builder: (context, state, navigationShell) => RootScreen(
               navigationShell: navigationShell,
             ),
         branches: [

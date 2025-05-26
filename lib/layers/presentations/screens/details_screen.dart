@@ -110,22 +110,22 @@ class DetailsScreen extends StatelessWidget {
                 )
               ],
             )),
-            Container(
-                child: Column(
-              mainAxisSize: MainAxisSize.max,
-              children: <Widget>[
-                IconButton(
-                    onPressed: () => {context.go('/details/details2')},
-                    icon: Icon(CupertinoIcons.arrow_down_left)),
-                Align(
-                  child: Image.asset(
-                    'assets/photo/airmaxshoes.png',
-                    width: 406,
-                    height: 56,
-                  ),
-                )
-              ],
-            )),
+            GestureDetector(
+              onTap: () => context.push('/details/details2'),
+              child: Container(
+                  child: Column(
+                mainAxisSize: MainAxisSize.max,
+                children: <Widget>[
+                  Align(
+                    child: Image.asset(
+                      'assets/photo/airmaxshoes.png',
+                      width: 406,
+                      height: 56,
+                    ),
+                  )
+                ],
+              )),
+            ),
             SizedBox(
               height: 25,
             ),
