@@ -3,7 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 class ProductCard extends StatelessWidget {
-  const ProductCard({super.key});
+  const ProductCard(
+      {super.key,
+      required String name,
+      required int price,
+      required int id,
+      required int category});
 
   @override
   Widget build(BuildContext context) {

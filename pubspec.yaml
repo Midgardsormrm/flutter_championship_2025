@@ -42,6 +42,9 @@ dependencies:
   get: ^4.7.2
   mobx: ^2.5.0
   flutter_mobx: ^2.3.0
+  google_fonts: ^6.2.1
+  easy_localization: ^3.0.7+1
+  flutter_translate: ^4.1.0
 
 dev_dependencies:
   flutter_test:
@@ -99,6 +102,7 @@ flutter:
   # see https://flutter.dev/to/font-from-package
   assets:
     - assets/photo/
+    - assets/localization/
     # - assets/photo/Ellipse_22.png
     # - assets/photo/Frame.png
     # - assets/photo/Salebanner.png 

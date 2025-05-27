@@ -8,7 +8,8 @@ class PopularScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var widgets = <Widget>[];
-    for (var i = 0; i <= 20; i++) widgets.add(ProductCard());
+    for (var i = 0; i <= 20; i++)
+      widgets.add(ProductCard(name: 'Nike', price: 752, id: 1, category: 1));
     return Scaffold(
         appBar: AppBar(
           title: Column(
@@ -30,7 +31,8 @@ class PopularScreen extends StatelessWidget {
             crossAxisCount: 2,
             children: List.generate(100, (index) {
               return Center(
-                child: ProductCard(),
+                child:
+                    ProductCard(name: 'Nike', price: 752, id: 1, category: 1),
               );
             }),
           ),
