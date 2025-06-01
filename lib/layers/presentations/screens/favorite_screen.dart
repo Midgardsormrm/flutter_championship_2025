@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:matule/layers/presentations/shared/ui/product_card.dart';
 import 'package:flutter/cupertino.dart';
 
-class PopularScreen extends StatelessWidget {
-  const PopularScreen({super.key});
+class FavoriteScreen extends StatelessWidget {
+  const FavoriteScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,16 +15,22 @@ class PopularScreen extends StatelessWidget {
           title: Column(
             children: [
               Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
-                  Text(
-                    'Популярное',
-                  ),
-                  SizedBox(
-                    width: 100,
-                  ),
-                  Center(
-                    child: Icon(CupertinoIcons.heart),
-                  ),
+                  Row(
+                    children: [
+                      Text(
+                        'Избранное',
+                      ),
+                      SizedBox(
+                        width: 100,
+                      ),
+                      Center(
+                        child: Icon(CupertinoIcons.heart),
+                      ),
+                    ],
+                  )
                 ],
               )
             ],

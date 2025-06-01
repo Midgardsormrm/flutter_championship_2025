@@ -28,7 +28,7 @@ class DetailsScreen2 extends StatelessWidget {
                         child: Column(
                           children: [
                             IconButton(
-                              onPressed: () => {context.go('/popular')},
+                              onPressed: () => {context.go('/')},
                               icon: Icon(CupertinoIcons.arrow_left),
                             ),
                           ],

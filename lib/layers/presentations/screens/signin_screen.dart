@@ -120,7 +120,7 @@ class SigninScreen extends StatelessWidget {
                     splashColor: Colors.white,
                     iconSize: 36,
                     padding: EdgeInsets.all(8.0),
-                    onPressed: () => {context.go('/popular')}),
+                    onPressed: () => {context.go('/')}),
               ),
               SizedBox(
                 height: 182,

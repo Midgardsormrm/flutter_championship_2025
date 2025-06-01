@@ -1,8 +1,15 @@
 import 'package:go_router/go_router.dart';
 import 'package:matule/core/zoom_drawer/menu_drawer.dart';
+import 'package:matule/layers/presentations/screens/basket_screen.dart';
+import 'package:matule/layers/presentations/screens/category/category_all_screen.dart';
+import 'package:matule/layers/presentations/screens/category/category_outdoor_screen.dart';
+import 'package:matule/layers/presentations/screens/category/category_running_screen.dart';
+import 'package:matule/layers/presentations/screens/category/category_tennis_screen.dart';
+import 'package:matule/layers/presentations/screens/delivery/checkout_screen.dart';
 import 'package:matule/layers/presentations/screens/details_screen.dart';
 import 'package:matule/layers/presentations/screens/details_screen2.dart';
 import 'package:matule/layers/presentations/screens/edit_profile.dart';
+import 'package:matule/layers/presentations/screens/favorite_screen.dart';
 import 'package:matule/layers/presentations/screens/home_screen.dart';
 import 'package:matule/layers/presentations/screens/popular_screen.dart';
 import 'package:matule/layers/presentations/screens/profile_screen.dart';
@@ -37,14 +44,37 @@ final router = GoRouter(
             ),
         branches: [
           StatefulShellBranch(routes: [
-            GoRoute(path: '/home', builder: (context, state) => HomeScreen()),
-          ]),
-          StatefulShellBranch(routes: [
             GoRoute(
-              path: '/popular',
-              builder: (context, state) => PopularScreen(),
+              path: '/',
+              builder: (context, state) => HomeScreen(),
+              routes: [
+                GoRoute(
+                  path: 'all',
+                  builder: (context, state) => CategoryAllScreen(),
+                ),
+                GoRoute(
+                  path: 'outdoor',
+                  builder: (context, state) => CategoryOutdoorScreen(),
+                ),
+                GoRoute(
+                  path: 'tennis',
+                  builder: (context, state) => CategoryTennisScreen(),
+                ),
+                GoRoute(
+                  path: 'running',
+                  builder: (context, state) => CategoryRunningScreen(),
+                ),
+              ],
             ),
           ]),
+          StatefulShellBranch(
+            routes: [
+              GoRoute(
+                path: '/favorite',
+                builder: (context, state) => FavoriteScreen(),
+              ),
+            ],
+          ),
           StatefulShellBranch(routes: [
             GoRoute(
               path: '/test',
@@ -58,7 +88,17 @@ final router = GoRouter(
                 routes: [])
           ])
         ]),
-
+    GoRoute(path: '/popular', builder: (context, state) => PopularScreen()),
+    GoRoute(
+      path: '/basket',
+      builder: (context, state) => BasketScreen(),
+      routes: [
+        GoRoute(
+          path: 'checkout',
+          builder: (context, state) => CheckoutScreen(),
+        ),
+      ],
+    ),
     // no auth
     GoRoute(
         path: '/signin',

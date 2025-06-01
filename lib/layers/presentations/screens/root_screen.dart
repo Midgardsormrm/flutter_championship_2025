@@ -110,7 +110,7 @@ class BottomBar extends StatelessWidget {
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(100)),
                           backgroundColor: Color.fromRGBO(72, 178, 231, 1),
-                          onPressed: () => context.push('/details')),
+                          onPressed: () => context.push('/basket')),
                     ),
                   ),
                 ],
