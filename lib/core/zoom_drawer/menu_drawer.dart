@@ -71,13 +71,13 @@ class MenuDrawer extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               IconButton(
-                  onPressed: () => {context.go('/signin')},
+                  onPressed: () => {context.go('/basket')},
                   icon: Icon(
                     CupertinoIcons.bag,
                     color: Colors.white,
                   )),
               IconButton(
-                  onPressed: () => {context.go('/signin')},
+                  onPressed: () => {context.go('/basket')},
                   icon: Text(
                     'Корзина',
                     style: TextStyle(fontSize: 20, color: Colors.white),
@@ -91,13 +91,13 @@ class MenuDrawer extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               IconButton(
-                  onPressed: () => {context.go('/popular')},
+                  onPressed: () => {context.go('/favorite')},
                   icon: Icon(
                     CupertinoIcons.heart,
                     color: Colors.white,
                   )),
               IconButton(
-                  onPressed: () => {context.go('/popular')},
+                  onPressed: () => {context.go('/favorite')},
                   icon: Text(
                     'Избранное',
                     style: TextStyle(fontSize: 20, color: Colors.white),

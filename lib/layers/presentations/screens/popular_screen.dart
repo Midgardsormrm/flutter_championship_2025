@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:matule/layers/presentations/shared/ui/product_card.dart';
 import 'package:flutter/cupertino.dart';
 
@@ -14,16 +15,26 @@ class PopularScreen extends StatelessWidget {
         appBar: AppBar(
           title: Column(
             children: [
+              IconButton(
+                onPressed: () => {context.go('/signin')},
+                icon: Icon(CupertinoIcons.arrow_left),
+              ),
               Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  Text(
-                    'Популярное',
-                  ),
-                  SizedBox(
-                    width: 100,
-                  ),
-                  Center(
-                    child: Icon(CupertinoIcons.heart),
+                  Row(
+                    children: [
+                      Text(
+                        'Популярное',
+                      ),
+                      SizedBox(
+                        width: 100,
+                      ),
+                      Center(
+                        child: Icon(CupertinoIcons.heart),
+                      ),
+                    ],
                   ),
                 ],
               )

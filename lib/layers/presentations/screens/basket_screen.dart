@@ -2,6 +2,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
+import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:go_router/go_router.dart';
 import 'package:matule/layers/presentations/shared/store/root_store.dart';
@@ -154,7 +155,3 @@ class BasketScreen extends StatelessWidget {
     );
   }
 }
-// list.fold(
-//     0,
-//     (p, c) => p + c,
-//   );
