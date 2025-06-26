@@ -1,7 +1,7 @@
-![Screenshot 1](publication/homescreenshot.jfif)
-![Screenshot 2](publication/profilescreenshot.jfif)
-![Screenshot 3](publication/shoescreenshot.jfif)
-![Screenshot 4](publication/offerscreenshot.jfif)
+![Screenshot 1](publication/homescreenshot.png)
+![Screenshot 2](publication/profilescreenshot.png)
+![Screenshot 3](publication/shoescreenshot.png)
+![Screenshot 4](publication/offerscreenshot.png)
 
 
 
