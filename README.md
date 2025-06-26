@@ -1,4 +1,4 @@
-##What is the app about
+# What is the app about
 
 ![Screenshot 1](publication/homescreenshot.png)
 ![Screenshot 2](publication/profilescreenshot.png)
