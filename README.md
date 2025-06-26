@@ -1,3 +1,13 @@
+![Screenshot 1](publication/homescreenshot.jfif)
+![Screenshot 2](publication/profilescreenshot.jfif)
+![Screenshot 3](publication/shoescreenshot.jfif)
+![Screenshot 4](publication/offerscreenshot.jfif)
+
+
+
+
+
+
 # [Worldskills 2025](https://pro.firpo.ru/)  mobile development app 
 
 <p>Разработка велась с использованием последней стабильной версии Flutter на момент проекта.
